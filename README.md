@@ -15,7 +15,7 @@ end
 # Install
 Step 1 - Clone
 ```sh
-git clone https://github.com/mioojo/topazium ~/topazium
+git clone https://github.com/topazium-lang/topazium ~/topazium
 ```
 * the ~/topazium part is required
 
