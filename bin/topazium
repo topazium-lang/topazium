@@ -1,0 +1,27 @@
+#!/usr/bin/env ruby
+require 'colorize'
+require 'optparse'
+
+OptionParser.new do |opts|
+  opts.banner = "Usage: example.rb [options]"
+
+  opts.on("-h", "--help", "Print this menu") do
+    puts opts
+  end
+  opts.on("-p", "--play", "Run any .top file form current directory") do
+    system("ruby *.top")
+  end
+  opts.on("-s", "--sinatra", "Generates a new sinatra project") do
+    system("mkdir ./topazium-sinatra")
+    system("cp ~/topazium/assets/presets/index-sinatra.top ./topazium-sinatra/")
+    system("mkdir ./topazium-sinatra/prefix/ && cp ~/topazium/prefix/html/* ./topazium-sinatra/prefix/")
+  end
+
+  opts.on("-r", "--ramaze", "Generates a new ramaze project") do
+    system("mkdir ./topazium-ramaze")
+    system("cp ~/topazium/assets/presets/index-ramaze.top ./topazium-ramaze/")
+    system("mkdir ./topazium-ramaze/prefix/ && cp ~/topazium/prefix/html/* ./topazium-ramaze/prefix/")
+  end
+
+end.parse!
+

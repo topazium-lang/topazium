@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+class Topazium
+ def self.install
+puts "==> Installing topazium..."
+puts "=> Installing dependencies..."
+system("sudo gem install colorize")
+system("sudo gem install sinatra")
+system("sudo gem install ramaze")
+system("sudo gem install optparse")
+system("sudo gem install require_all")
+puts "==> Dependencies installed with sucess!"
+puts "==> Creating binary..."
+system("sudo cp ./bin/topazium /usr/bin")
+ end
+end
+
+Topazium.install

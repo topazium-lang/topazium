@@ -1,0 +1,9 @@
+require 'require_all'
+require_all 'prefix/'
+require 'sinatra'
+get '/' do
+## 			|
+## Your code goes here  V
+	Top.h1o + 'Example' + Top.h1c + Top.br + Top.po + 'Example' + Top.pc
+##
+end
