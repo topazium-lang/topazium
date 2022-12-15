@@ -7,8 +7,23 @@ Topazium is a helper ffor sinatra and ramaze coders with ruby
 
 Topazium add prefixes to your project! like
 ```sh
+require 'require_all'
+require_all 'prefix/'
+require 'sinatra'
 get '/' do
-  Top.h1o + 'Example 1' + Top.h1c + Top.br + Top.po + 'Example 2' + Top.pc
+## 			|
+## Your code goes here  V
+	Top::start + 
+	Top::heo + 
+	Top::tio + "Test" + Top::tic + 
+	Top::hec + 
+	Top::bo + 
+	Top::ceo + 
+	Top::h1o + "Hello world" + Top::h1c + 
+	Top::po + "How are u?" + Top::pc + 
+	Top::cec + 
+	Top::bc
+##
 end
 ```
 
