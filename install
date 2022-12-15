@@ -11,7 +11,7 @@ system("sudo gem install require_all")
 puts "==> Dependencies installed with sucess!"
 puts "==> Creating binary..."
 system("chmod +x ./bin/topazium")
-system("sudo cp ./bin/topazium /usr/bin")
+system("sudo cp ./bin/topazium /usr/local/bin")
  end
 end
 
