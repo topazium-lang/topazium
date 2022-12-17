@@ -11,7 +11,7 @@ OptionParser.new do |opts|
   opts.on("-e", "--emoji", "emoji extension for topazium") do
     puts "Installing emoji extension".colorize(:yellow)
     system("git clone https://github.com/topazium-lang/topazium-extensions")
-    system("mv ./topazium-extensions/emoji.rb ./prefix/html/")
+    system("mv ./topazium-extensions/emoji.rb ./prefix/")
     system("rm -rf ./topazium-extensions/")
     puts "Emoji extension installed with sucess!. use with: Emoji::(emoji). Ex: Emoji::happy".colorize(:yellow)
   end
