@@ -51,6 +51,17 @@ Execute an project:
 topazium -p
 ```
 
+# Package Manager
+List all extensions:
+```sh
+tpm -h (or --help)
+```
+
+Install an extension (example):
+```sh
+tpm -e (install emoji extension)
+```
+
 # Demo Video
 
 
