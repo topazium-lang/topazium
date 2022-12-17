@@ -1,0 +1,20 @@
+#!/usr/bin/env ruby
+require 'colorize'
+require 'optparse'
+
+OptionParser.new do |opts|
+  opts.banner = "Usage: tpm [options]"
+
+  opts.on("-h", "--help", "Print this menu") do
+    puts opts
+  end
+  opts.on("-e", "--emoji", "emoji extension for topazium") do
+    puts "Installing emoji extension".colorize(:yellow)
+    system("git clone https://github.com/topazium-lang/topazium-extensions")
+    system("mv ./topazium-extensions/emoji.rb ./prefix/html/")
+    system("rm -rf ./topazium-extensions/")
+    puts "Emoji extension installed with sucess!. use with: Emoji.(emoji). Ex: Emoji.happy".colorize(:yellow)
+  end
+
+end.parse!
+

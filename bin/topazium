@@ -3,7 +3,7 @@ require 'colorize'
 require 'optparse'
 
 OptionParser.new do |opts|
-  opts.banner = "Usage: example.rb [options]"
+  opts.banner = "Usage: topazium [options]"
 
   opts.on("-h", "--help", "Print this menu") do
     puts opts
