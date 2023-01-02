@@ -15,6 +15,14 @@ OptionParser.new do |opts|
     system("rm -rf ./topazium-extensions/")
     puts "Emoji extension installed with sucess!. use with: Emoji::(emoji). Ex: Emoji::happy".colorize(:yellow)
   end
+  opts.on("-su", "--styleutils", "just utils for topazium") do
+    puts "Installing StyleUtils extension".colorize(:yellow)
+    system("git clone https://github.com/topazium-lang/topazium-extensions")
+    system("mv ./topazium-extensions/styleutils.rb ./prefix/")
+    system("rm -rf ./topazium-extensions/")
+    puts "StyleUtils extension installed with sucess!. use with: SUtils::(util). Ex: SUtils::line".colorize(:yellow)
+  
+  end
 
 end.parse!
 
